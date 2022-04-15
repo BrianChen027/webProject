@@ -1,0 +1,323 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+i {
+  pointer-events: none;
+}
+
+header {
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header h1 {
+  color: white;
+  padding-left: 0.5rem;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+header div.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+header div.logo img {
+  width: 5vw;
+  height: 5vw;
+}
+
+body {
+  min-height: 90vh;
+  width: 100%;
+  background-image: url("../picture/background.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
+}
+
+form input,
+form button {
+  border: none;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.75rem;
+  margin: 0.2rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 2px 1px 10px #050505;
+          box-shadow: 2px 1px 10px #050505;
+}
+
+form input[type="number"] {
+  width: 50px;
+  text-align: center;
+}
+
+form input::-webkit-outer-spin-button,
+form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+form input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+form button {
+  cursor: pointer;
+  background-color: #bd3e17;
+  color: white;
+  border-radius: 0.5rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-box-shadow: 2px 1px 10px #050505;
+          box-shadow: 2px 1px 10px #050505;
+}
+
+form button:hover {
+  background-color: rgba(202, 76, 38, 0.8);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section div.todo {
+  width: 30vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.2rem 0rem;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+section div.todo p {
+  background-color: white;
+  color: black;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.75rem;
+  margin: 0.2rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 2px 1px 10px #050505;
+          box-shadow: 2px 1px 10px #050505;
+}
+
+section div.todo p.todo-text {
+  width: 50%;
+}
+
+section div.todo p.todo-time {
+  width: 25%;
+  text-align: center;
+}
+
+section div.todo button {
+  padding: 0.25rem 0.5rem;
+  font-size: 1.75rem;
+  margin: 0.25rem;
+  border: none;
+  cursor: pointer;
+  color: white;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+section div.todo button.complete {
+  background-color: #0cad0c;
+  border-radius: 25%;
+}
+
+section div.todo button.complete:hover {
+  background-color: rgba(139, 236, 139, 0.5);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+section div.todo button.trash {
+  background-color: #ce2828;
+  border-radius: 25%;
+}
+
+section div.todo button.trash:hover {
+  background-color: rgba(145, 47, 47, 0.5);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+div.sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0rem;
+}
+
+div.sort button {
+  cursor: pointer;
+  background-color: #ac1132;
+  color: white;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.75rem;
+  border-radius: 0.5rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-box-shadow: 2px 1px 10px #050505;
+          box-shadow: 2px 1px 10px #050505;
+}
+
+div.sort button:hover {
+  background-color: rgba(138, 10, 38, 0.8);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.done {
+  opacity: 0.5;
+  text-decoration: line-through;
+  text-decoration-thickness: 0.2rem;
+}
+
+@-webkit-keyframes scaleUp {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes scaleDown {
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes scaleDown {
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@media screen and (max-width: 1570px) {
+  section div.todo p {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 1390px) {
+  section div.todo {
+    width: 40vw;
+  }
+  section div.todo p {
+    font-size: 1.5rem;
+  }
+  section div.todo p.todo-text {
+    width: 60%;
+  }
+  section div.todo p.todo-time {
+    width: 40%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  section div.todo {
+    width: 50vw;
+  }
+  section div.todo p {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  header h1 {
+    font-size: 2.3rem;
+    font-weight: 600;
+  }
+  header div.logo {
+    margin-left: 0.5rem;
+  }
+  header div.logo img {
+    width: 10vw;
+    height: 10vw;
+  }
+  section div.todo {
+    width: 80vw;
+  }
+  section div.todo p {
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
