@@ -1,6 +1,10 @@
 Project: ToDo List
 ==================
 
-In this project, I will focus how to 
+### In this project, I will focus on how to store data in Browser's "Local Storage".
+### But not only storage data, but also gain it from local storage and demostrrate it on the website.
 
-![image](https://user-images.githubusercontent.com/97871497/163579648-d94462d1-c985-4e3a-aef4-0e487de7222c.png)
+## Function: 
+
+
+
