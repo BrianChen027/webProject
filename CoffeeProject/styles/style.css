@@ -1,0 +1,436 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Reem Kufi", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background-color: white;
+  -webkit-box-shadow: 3px 3px 5px 1px #6b6b6b;
+          box-shadow: 3px 3px 5px 1px #6b6b6b;
+}
+
+header h1 {
+  padding-left: 0.5rem;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+header div.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 5;
+      -ms-flex: 5 1 600px;
+          flex: 5 1 600px;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+header div.logo img {
+  width: 6vw;
+  height: 6vw;
+}
+
+header nav {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 400px;
+          flex: 2 1 400px;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header nav ul li a {
+  color: #85380b;
+  text-decoration: none;
+  font-size: 2rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+header nav ul li a:hover {
+  color: orange;
+}
+
+main section.backimage {
+  min-height: 90vh;
+  width: 100%;
+  background-image: url("../Pictures/Backpic.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+main section.backimage h3 {
+  font-size: 4rem;
+  color: white;
+  margin: 2rem 0rem;
+}
+
+main section.backimage button.start {
+  margin-top: 2.5rem;
+  background-color: rgba(173, 134, 112, 0.8);
+  padding: 0.75rem 1.5rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #6e320f;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+main section.backimage button.start:hover {
+  background-color: rgba(247, 243, 243, 0.8);
+}
+
+main section.backimage div.filter {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  min-height: 90vh;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+main section.second {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("../Pictures/beanBack.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+main section.second div.sentence {
+  margin-top: 5rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #532307;
+}
+
+main section.second section.cards {
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  min-height: 80vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main section.second section.cards div.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 300px;
+          flex: 1 1 300px;
+}
+
+main section.second section.cards div.card div.image-container {
+  overflow: hidden;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+}
+
+main section.second section.cards div.card div.image-container img {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+main section.second section.cards div.card div.image-container img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+main section.second section.cards div.card h4 {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+main section.second section.cards div.card a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: #fdfdfd;
+  background-color: rgba(177, 105, 46, 0.781);
+  border-radius: 1rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+main section.second section.cards div.card a:hover {
+  color: #c96203;
+  background-color: rgba(250, 192, 145, 0.781);
+}
+
+main section.second div.filter {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  min-height: 90vh;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+footer {
+  background-color: #c59e6a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 40vh;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer div.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+
+footer div.logo h1 {
+  margin-left: 0.5rem;
+  font-size: 3.5rem;
+}
+
+footer div.logo img {
+  width: 6vw;
+  height: 6vw;
+}
+
+footer nav {
+  width: 30%;
+}
+
+footer nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer nav ul li {
+  -ms-flex-preferred-size: 100px;
+      flex-basis: 100px;
+}
+
+footer nav ul li a {
+  color: white;
+  font-weight: 800;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+footer section.links a {
+  margin: 0rem 2rem;
+}
+
+footer section.links a img {
+  width: 5vw;
+  height: 5vw;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b87932;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #7e400d;
+}
+
+@media screen and (max-width: 1141px) {
+  main section.second div.sentence h2 {
+    font-size: 2rem;
+  }
+  main section.second section.cards div.card img {
+    width: 40vw;
+    height: 40vw;
+  }
+}
+
+@media screen and (max-width: 1031px) {
+  header div.logo {
+    margin-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header nav.ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  main section.backimage h3 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header div.logo img {
+    width: 25vx;
+    height: 25vx;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+  header nav ul li a {
+    font-size: 1.5rem;
+  }
+  main section.second section.cards div.card h4 {
+    font-size: 1.5rem;
+  }
+  footer div.logo h1 {
+    margin-left: 0.5rem;
+    font-size: 2rem;
+  }
+  footer div.logo img {
+    width: 10vw;
+    height: 10vw;
+  }
+  footer nav ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer nav ul li a {
+    margin: 0rem 0.5rem;
+    color: white;
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  footer section.links a {
+    margin: 0rem 0.75rem;
+  }
+  footer section.links a img {
+    width: 10vw;
+    height: 10vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */
