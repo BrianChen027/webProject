@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Brian Chen" />
-        <!-- 透過dataJson來取得城市名並訂為網頁的title -->
-        <title><%= djs.name%> (<%= djs.sys.country%>)</title>
-        <link rel="stylesheet" href="/styles/style.css" />
-    </head>
-    <body>
-        <h1><%= djs.name %> Weather Now</h1>
-        <table>
-            <tr>
-                <td>Main Weather</td>
-                <td><%= djs.weather[0].main %></td>
-            </tr>
-            <tr>
-                <td>Weather Description</td>
-                <td><%= djs.weather[0].description %></td>
-            </tr>
-            <tr>
-                <td>Area Temperature</td>
-                <td><%= tempC %></td> 
-            </tr>
-        </table>
-    
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Brian Chen" />
+    <title>Weather of the World</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <section class="nameOfCities">
+      <div class="containerSearch">
+        <h1>Weather of Cities</h1>
+        <h2>Please enter the city you want to know</h2>
+        <form action="/weather/search" method="post">
+          <label for="city">City: </label>
+          <input type="text" id="city" name="city" />
+          <button>Search</button>
+          <br />
+          <!-- <button><a href="/">Home</a></button> -->
+        </form>
+      </div>
+      <div class="containerCity">
+        <ul>
+          <h3>Don't know which city you want to search?</h3>
+          <h3>Here is some suggection for you</h3>
+          <li><a href="/weather/search/Tokyo">Tokyo</a></li>
+          <li><a href="/weather/search/Taipei">Taipei</a></li>
+          <li><a href="/weather/search/London">London</a></li>
+          <li><a href="/weather/search/Nagoya">Nagoya</a></li>
+          <li><a href="/weather/search/Kyoto">Kyoto</a></li>
+          <li><a href="/weather/search/Osaka">Osaka</a></li>
+          <li><a href="/weather/search/Okayama">Okayama</a></li>
+        </ul>
+      </div>
+    </section>
+  </body>
 </html>
