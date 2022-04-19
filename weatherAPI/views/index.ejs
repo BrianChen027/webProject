@@ -1,27 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="robots" content="index, follow" />
-        <meta
-            name = "description"
-            content = "This is a website for people to search the weather they want."
-        />
-        <meta name="author" content="Brian Chen" />
-        <title>Homepage</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="robots" content="index, follow" /> -->
+    <meta name="description" content="Only for practice" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@600&display=swap"
+      rel="stylesheet"
+    />
 
-        <link rel="stylesheet" href="../public/styles/style.css" />
-    </head>
-    <body>
-        <h1>This is a Homepage.</h1>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About us</a></li>
-                <li><a href="./login.html">Log in</a></li>
-                <li><a href="./contact.html">Contact us</a></li>
-            </ul>  
-        </nav>
-    </body>
+    <meta name="author" content="Brian Chen" />
+    <title>Weather API</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <div>
+          <img src="/pictures/logoIcon.svg" alt="Logo" />
+        </div>
+        <div>
+          <h1>WeatherAPI</h1>
+        </div>
+      </div>
+      <!-- <a href="#" class="logo">LOGO</a> -->
+      <div class="rightSide">
+        <div class="botton Night">
+          <ion-icon name="moon-outline"></ion-icon>
+          <ion-icon name="bulb-outline"></ion-icon>
+        </div>
+        <div class="botton Menu">
+          <ion-icon name="menu-outline"></ion-icon>
+          <ion-icon name="close-outline"></ion-icon>
+        </div>
+      </div>
+    </header>
+    <section class="main">
+      <video src="/videos/video.mp4" autoplay loop muted type="mp4"></video>
+      <img src="/masks/mask2.png" class="mask" />
+      <h2>Peaceful</h2>
+      <p class="copyright">© Made by Brian</p>
+      <div class="iconS">
+        <ul class="social-icons">
+          <li>
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+          </li>
+          <li>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+          </li>
+          <li>
+            <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+          </li>
+          <li>
+            <a href="#"><ion-icon name="logo-discord"></ion-icon></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Bar Nav導覽列 -->
+    <ul class="navBar">
+      <li><a href="#">Home</a></li>
+      <li><a href="/weather/search">Weather</a></li>
+      <li><a href="#">More Information</a></li>
+    </ul>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      let Night = document.querySelector(".Night");
+      let Menu = document.querySelector(".Menu");
+      let body = document.querySelector("body");
+      let navBar = document.querySelector(".navBar");
+
+      Night.onclick = function () {
+        Night.classList.toggle("active");
+        body.classList.toggle("dark");
+      };
+
+      Menu.onclick = function () {
+        Menu.classList.toggle("active");
+        // body.classList.toggle('dark');
+        navBar.classList.toggle("active");
+      };
+    </script>
+  </body>
 </html>
