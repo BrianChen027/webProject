@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Brian Chen" />
+    <!-- 透過dataJson來取得城市名並訂為網頁的title -->
+    <title><%= djs.name%> (<%= djs.sys.country%>)</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <h1><%= djs.name %> Weather Now</h1>
+    <table>
+      <tr>
+        <td>Main Weather</td>
+        <td><%= djs.weather[0].main %></td>
+      </tr>
+      <tr>
+        <td>Weather Description</td>
+        <td><%= djs.weather[0].description %></td>
+      </tr>
+      <tr>
+        <td>Area Temperature</td>
+        <td><%= tempC %></td>
+      </tr>
+      <tr>
+        <td>How does it feels like?</td>
+        <td><%= tempReal %></td>
+      </tr>
+      <tr>
+        <td>Comfortable?</td>
+        <td><%= djs.main.humidity %></td>
+      </tr>
+    </table>
+  </body>
+</html>
