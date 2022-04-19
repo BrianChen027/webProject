@@ -6,9 +6,265 @@
   font-family: "Reem Kufi", sans-serif;
 }
 
-body {
-  background-color: gray;
+:root {
+  --black: #333;
+  --white: #fff;
+}
+
+.dark {
+  --black: #fff;
+  --white: #333;
+}
+
+header {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 30px 50px;
+  z-index: 10000;
+}
+
+header h1 {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  padding: 0 0.5rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+header div.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 5;
+      -ms-flex: 5 1 600px;
+          flex: 5 1 600px;
+  margin-top: 0rem;
+  margin-left: 0rem;
+}
+
+header div.logo img {
+  width: 5vw;
+  height: 5vw;
+}
+
+header.logo {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: var(--black);
+  text-decoration: none;
+  font-size: 2em;
+  font-weight: bold;
+  Letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.rightSide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.botton {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: var(--white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  border-radius: 20%;
+  margin-left: 10px;
+}
+
+.botton ion-icon {
+  font-size: 2em;
+  color: var(--black);
+}
+
+.botton.Menu ion-icon {
+  font-size: 3em;
+}
+
+.botton ion-icon:nth-child(2) {
+  display: none;
+}
+
+.botton.active ion-icon:nth-child(2) {
+  display: block;
+}
+
+.botton.active ion-icon:nth-child(1) {
+  display: none;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  mix-blend-mode: screen;
+}
+
+.dark .mask {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  mix-blend-mode: multiply;
+}
+
+.main h2 {
+  position: relative;
+  z-index: 3;
+  font-size: 16vw;
   color: white;
+  text-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.navBar {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: var(--white);
+  z-index: 4;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.navBar.active {
+  left: 0;
+}
+
+.navBar li {
+  list-style: none;
+}
+
+.navBar li a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 5px 0;
+  font-size: 2em;
+  text-decoration: none;
+  color: var(--black);
+  padding: 5px 20px;
+  border-radius: 40px;
+}
+
+.navBar li a:hover {
+  background: var(--black);
+  color: var(--white);
+}
+
+.copyright {
+  position: absolute;
+  left: 100px;
+  bottom: 40px;
+  z-index: 4;
+  font-weight: 500;
+  font-size: 1.2em;
+  color: var(--black);
+}
+
+.social-icons {
+  font-size: 1.75em;
+  position: absolute;
+  right: 50px;
+  bottom: 25px;
+  z-index: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.social-icons li {
+  padding: 0 5px;
+  list-style: none;
+}
+
+.social-icons li a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 1.75em;
+}
+
+.nameOfCities {
+  width: 100%;
+  background-color: rgba(246, 245, 243, 0.394);
+  border-radius: 20px;
+  padding-top: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,41 +275,34 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-body table, body tr, body td {
-  border: 1px solid white;
-  border-collapse: collapse;
-}
-
-body table {
-  font-size: 1.5rem;
-}
-
-body nav {
-  -webkit-box-flex: 2;
-      -ms-flex: 2 1 400px;
-          flex: 2 1 400px;
-}
-
-body nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style-type: none;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-body nav ul li a {
-  color: #85380b;
-  text-decoration: none;
   font-size: 2rem;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
 }
 
-body nav ul li a:hover {
-  color: orange;
+.nameOfCities input, .nameOfCities button {
+  width: 45%;
+}
+
+.nameOfCities .titleOfTools label, .nameOfCities .titleOfTools input, .nameOfCities .titleOfTools button {
+  font-size: 3rem;
+  border-radius: 20px;
+}
+
+.nameOfCities .containerCity ul li a {
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 20px;
+  }
+  .copyright {
+    left: 20px;
+    bottom: 30px;
+  }
+  .social-icons {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
