@@ -8,3 +8,6 @@ Project: weatherAPI
 ### ejs, express, nodemon, node-fetch
 
 ### Function: 
+![image](https://user-images.githubusercontent.com/97871497/164266448-c31da740-f8d5-4b10-acc5-be2a7bc5fd96.png)
+
+![image](https://user-images.githubusercontent.com/97871497/164266552-0013f6ec-a1ea-4d38-ac3a-a54dccf17e07.png)
